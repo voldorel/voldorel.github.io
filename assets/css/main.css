@@ -102,9 +102,24 @@ input, select, textarea {
   opacity: .7;
 }
 
+.image-main {
+	width: 20em;
+	margin-left: 3em;
+	text-align: center;
+	justify-content: center;
+	align-content: center;
+}
+.image-main1 {
+	width: 10em;
+	border-radius: 50%;
+	margin-left: 3em;
+	justify-content: center;
+	align-content: center;
+}
+
 .custom-scrollbar {
   width: 100%; /* Set the desired width for the container */
-  height: 10em; /* Set the desired height for the container */
+  height: 35em; /* Set the desired height for the container */
   overflow: auto;
   scrollbar-width: thin; /* Width of the scrollbar, 'thin' is a narrow scrollbar */
   scrollbar-color: #333 #999; 
@@ -1412,10 +1427,10 @@ input, select, textarea {
 
 				#header nav ul li a {
 					display: block;
-					min-width: 7.5rem;
+					min-width: 6.5rem;
 					height: 2.75rem;
 					line-height: 2.75rem;
-					padding: 0 1.25rem 0 1.45rem;
+					padding: 0 0.25rem 0 0.45rem;
 					text-transform: uppercase;
 					letter-spacing: 0.2rem;
 					font-size: 0.8rem;
