@@ -98,6 +98,12 @@ input, select, textarea {
   transition: opacity 0.25s ease-in-out;
 }
 
+.gallery-img1 {
+	max-width:  10em;
+  object-fit: cover;
+  transition: opacity 0.25s ease-in-out;
+}
+
 .gallery-img:hover {
   opacity: .7;
 }
