@@ -1,692 +1,1293 @@
-<!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Mehdi Parvan Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehdi Parvan | Game Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #6c5ce7;
+            --primary-dark: #5649c0;
+            --secondary: #00cec9;
+            --dark: #2d3436;
+            --light: #f5f6fa;
+            --accent: #fd79a8;
+            --success: #00b894;
+        }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-				<!-- Header -->
-					<header id="header">
-						
-						<div class="content">
-							<div class="inner">
-								<img class="gallery-img image-main1" src="images/MehdiArt.jpg">
-								<h1>Mehdi Parvan</h1>
-								<p> Game Developer and Creative Artist, fusing code and artistry to craft immersive gaming experiences.</p>
-							</div>
-						</div>
-						<nav>
-							<ul>
-								<li><a href="#aboutme">About me</a></li>
-								<li><a href="#work">Games</a></li>
-								<li><a href="#art">Drawings</a></li>
-								<li><a href="#3dart">3d Art</a></li>
-								<li><a href="#contact">Contact</a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
-							</ul>
-						</nav>
-					</header>
+        body {
+            background-color: #f8f9fa;
+            color: var(--dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
 
-				<!-- Main -->
-					<div id="main">
+        /* Header Styles */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
 
-						<!-- Intro -->
-							<article id="aboutme">
-								<h2 class="major">Hello!</h2>
-								<div class="custom-scrollbar">
-									<div class="image-main">
-										<img class="gallery-img image-main1" src="images/Mehdi.jpg" alt="That's me!">
-									</div>
-									<p>Hello, I'm Mehdi Parvan, a 26-year-old Game Developer with a solid background in coding and a focus on C#. My journey into the world of programming began in 2013, with my professional career taking shape in 2019. .</p>
-									<p>I have a strong foundation in programming, including expertise in C#, but I also have experience in Java, C++, HTML, CSS, and JavaScript, which adds to my versatility.</p>
-									<p>Throughout my career, I've primarily worked on Online Games and VR games. In my most recent role, I started as a Unity Developer and was later promoted to Lead Unity Developer for the game "Mafia," which gained recognition in local Iranian markets such as <a href="https://cafebazaar.ir/app/com.amytis.mafiaincity?l=en" target="_blank">Bazaar</a> and <a href="https://myket.ir/app/com.amytis.mafiaincity" target="_blank">Myket</a>.
-									</p>
-									<p>In addition to my professional roles, I've pursued freelance projects, from captivating VR experiences to innovative front-end web development, showcasing my adaptability and willingness to explore new horizons.</p>
-									<p>
-										What distinguishes me is my keen interest in both the technical and artistic dimensions of game development. Apart from Unity, I've explored other game development tools like Game Maker Studio, complemented by Spine and Moho. I'm also proficient in 3D modeling using Blender and possess skills in traditional hand drawing and artistic expression.
-									</p>
-									<p>
-										Furthermore, I've delved into server development, having independently created an online game server using ASP.NET, which reflects my commitment to continuous learning and growth.
-									</p>
-									<p>I'm well-versed in multiple programming languages, and I'm ready to contribute my skills and creativity to the dynamic field of game development, making a meaningful impact on every project I undertake.</p>
-								</div>
-							</article>
+        header.scrolled {
+            background-color: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+        }
 
-						<!-- Work -->
-							<article id="work">
-								<h2 class="major">Games</h2>
-								<span class="image main"></span>
-								<p>Here are some games I've created, either to be released, or during game jams, or to showcase my skills using Unity.</p>
-								<div class="gallery-grid">
-								    <figure class="gallery-frame">
-								    	<a href="#mafia">
-									      <img class="gallery-img" src="images/Gif/mafia.gif" alt="symbol image">
-									      <figcaption>Mafia dar Shahr</figcaption>
-								    	</a>
-								    </figure>
-								    <figure class="gallery-frame">
-								    	<a href="#hitrun">
-									      <img class="gallery-img" src="images/Gif/Hitrun.gif" alt="symbol image">|
-									      <figcaption>Hit&Run Copy</figcaption>
-								    	</a>
-								    </figure>
-								    <figure class="gallery-frame">
-								    	<a href="#heli">
-									      <img class="gallery-img" src="images/Gif/Heli.gif" alt="symbol image">
-									      <figcaption>Helicopter Sim VR</figcaption>
-								    	</a>
-								    </figure>
-								    <figure class="gallery-frame">
-								    	<a href="#interior">
-									      <img class="gallery-img" src="images/Gif/Design.gif" alt="symbol image">
-									      <figcaption>Interior Design VR</figcaption>
-								    	</a>
-								    </figure>
-								    <figure class="gallery-frame">
-								    	<a href="#fps">
-									      <img class="gallery-img" src="images/Gif/Guns.gif" alt="symbol image">
-									      <figcaption>FPS VR</figcaption>
-								    	</a>
-								    </figure>
-								    <figure class="gallery-frame">
-								    	<a href="#navsim">
-									      <img class="gallery-img" src="images/Gif/Nav.gif" alt="symbol image">
-									      <figcaption>Nav Sim VR</figcaption>
-								    	</a>
-								    </figure>
-								    <figure class="gallery-frame">
-								    	<a href="#elevator">
-									      <img class="gallery-img" src="images/Gif/Elevator.gif" alt="symbol image">
-									      <figcaption>Elevator Phobia VR</figcaption>
-								    	</a>
-								    </figure>
-								    <figure class="gallery-frame">
-								    	<a href="#mri">
-									      <img class="gallery-img" src="images/Gif/MRI.gif" alt="symbol image">
-									      <figcaption>CT Phobia VR</figcaption>
-								    	</a>
-								    </figure>
-								    <figure class="gallery-frame">
-								    	<a href="#hideout">
-									      <img class="gallery-img" src="images/Gif/Hideout.gif" alt="symbol image">
-									      <figcaption>Hideout Sidescroller</figcaption>
-								    	</a>
-								    </figure>
-								  </div><!-- end:gallery-grid -->
-							</article>
-							</article>
-							<!-- mafia -->
-							<article id="mafia">
-								<h2 class="major">Mafia Dar Shahr</h2>
-								<span class="image main">
-									<img class="gallery-img1" src="images/Gif/mafia.gif" alt="symbol image">
-								</span>
-								<div class="custom-scrollbar">
-									<a href="https://myket.ir/app/com.amytis.mafiaincity" target="_blank"> Myket </a>
-									<br/>
-									<a href="https://cafebazaar.ir/app/com.amytis.mafiaincity?l=en" target="_blank"> Bazaar </a>
-									<p>* Spearheaded core gameplay development for Mafia Dar Shar, captivating over 500K players, fostering heightened engagement, and achieving remarkable retention rates.<br/>
-* Engineered a seamless network communication system through websockets, optimizing traffic for flawless game synchronization, elevating the immersive experience for players.<br/>
-*Mentored and guided junior developers, implementing robust architectural patterns (Layered, MVC, Client-Server) to fortify the game's foundation, ensuring scalability and structural integrity.<br/>
-* Led a comprehensive UI revamp, significantly enhancing the user experience, resulting in amplified engagement and unprecedented retention rates among the player base.<br/>
-* Pioneered Test-Driven Development strategies in collaboration with QA testers, yielding a substantial 50% increase in sales and reducing development time by an impressive 20%.<br/>
-* Orchestrated blue-green deployments, ensuring seamless game updates and enhancements, providing a consistent and evolving experience for the player community.</p>
-								</div>
-							</article>
-							<article id="hitrun">
-								<h2 class="major">Hit & Run</h2>
-								<span class="image main">
-									<img class="gallery-img1" src="images/Gif/Hitrun.gif" alt="symbol image">
-								</span>
-								<div class="custom-scrollbar">
-									<a href="https://github.com/voldorel/Run-n-Gun-Challenge" target="_blank"> Github </a>
-									<br/>
-										Run and Gun Copy - Personal Project (2022)
-<div>
-	
-Development Overview:<br/>
-For this personal project, I embarked on a challenging endeavor to recreate a vertical slice of a renowned run-and-gun game entirely from scratch. The project aimed not only to replicate but to understand the intricacies of game design, programming, and modeling.
-</div>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-Key Accomplishments: <br/>
-<div>
-	
-Vertical Slice Recreation: Recreating a vertical slice from the ground up involved meticulous attention to detail in both gameplay mechanics and visual elements.<br/>
-Slo-Mo Event Integration: Implemented a dynamic slo-mo feature, adding an extra layer of complexity and engagement to the gameplay.
-Comprehensive Modeling in Blender: The entire game, from characters to environments, was meticulously modeled using Blender, emphasizing a cohesive and immersive visual experience.<br/>
-Technical Insights:<br/>
-The project provided invaluable insights into several key areas:<br/>
-</div>
-<div>
-	
-Game Design and Development: Understanding the nuances of game mechanics, from character movement to weapon dynamics, was integral to achieving the desired gameplay experience.<br/>
-Slo-Mo Integration: Implementing slo-mo required a deep dive into altering game dynamics, time scaling, and user interaction, fostering a better understanding of game physics and user engagement strategies.<br/>
-3D Modeling and Artistry: The extensive modeling work in Blender taught vital skills in asset creation, environment design, and character modeling, emphasizing the importance of visual appeal in gaming.<br/>
-</div>
-<div>
-	
-Learning Outcomes:<br/>
-Holistic Game Development Understanding: This project provided a comprehensive overview of the various facets of game development, from coding intricacies to 3D modeling challenges.<br/>
-Adaptability and Problem-Solving: Overcoming hurdles in modeling and programming demanded adaptive thinking and problem-solving skills, refining my ability to address complex challenges.<br/>
-Visualization and Creativity: Understanding how to translate ideas into tangible game elements honed visualization skills and fueled creative thinking in designing engaging gameplay.<br/>
-</div>
-<div>
-	
-Conclusion:<br/>
-The Run and Gun Copy project was not merely about replication; it was a profound learning experience that illuminated the multifaceted nature of game development. It provided practical insights and skills crucial for navigating the dynamic world of game design and creation.
-</div>
-<div>
-	
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
 
-This undertaking fostered an appreciation for the meticulous balance between technical proficiency and artistic creativity required in developing captivating and immersive gaming experiences.
-</div>
-								</div>
-							</article>
-							<article id="heli">
-								<h2 class="major">Heli VR</h2>
-								<span class="image main">
-									<img class="gallery-img1" src="images/Gif/Heli.gif" alt="symbol image">
-								</span>
-								<div class="custom-scrollbar">
-									<p>Part of a Milsim Project implementing VR interactions using Oculus Unity Integration package </p>
-									<div>
-										I was the Only Developer on the programming side of this project.
-									</div>
-								</div>
-							</article>
-							<article id="interior">
-								<h2 class="major">Interior Design VR</h2>
-								<span class="image main">
-									<img class="gallery-img1" src="images/Gif/Design.gif" alt="symbol image">
-								</span>
-								<div class="custom-scrollbar">
-									<div>
-										Collaborated with backend developers and project owners to integrate REST APIs and XR toolkit for interior design projects.<br/>
-Implemented asset bundles and MVC architecture for streamlined project organization and efficiency.<br/>
-Employed UWR and asynchronous programming to optimize workflows and improve project performance.<br/>
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
 
-									</div>
-								</div>
-							</article>
-							<article id="fps">
-								<h2 class="major">FPS VR</h2>
-								<span class="image main">
-									<img class="gallery-img1" src="images/Gif/Guns.gif" alt="symbol image">
-								</span>
-								<div class="custom-scrollbar">
-									<div>
-										Unity Oculus Integration kit<br/>
-										VR Interaction Framework<br/>
-										Implemented Levelup system and UI<br/>
-									</div>
-								</div>
-							</article>
-						<!-- art -->
-							<article id="art">
-								<h2 class="major">Drawings</h2>
-								<p>Art has been a part of my life for over a decade. I've been sketching and creating portraits with a deep passion. I've also explored digital art and animation. In addition, I've had the privilege of showcasing my work in two art exhibitions, allowing me to share my creativity with a broader audience. This love for art, whether on paper or in pixels, continues to inspire me as I aim to create visually captivating experiences in game development.</p>
-								<div class="gallery-grid">
-								    <figure class="gallery-frame">
-								    	<a href="images/Art/2d/123.jpg" target="_blank">
-									      <img class="gallery-img" src="images/Art/2d/123.jpg" alt="symbol image">
-								    	</a>
-								    </figure>
-								    <figure class="gallery-frame">
-								    	<a href="images/Art/2d/124.jpg" target="_blank">
-									      <img class="gallery-img" src="images/Art/2d/124.jpg" alt="symbol image">
-								    	</a>
-								    </figure>
-								    <figure class="gallery-frame">
-								    	<a href="images/Art/2d/117.jpg" target="_blank">
-									      <img class="gallery-img" src="images/Art/2d/117.jpg" alt="symbol image">
-								    	</a>
-								    </figure>
-								    <figure class="gallery-frame">
-								    	<a href="images/Art/2d/114.jpg" target="_blank">
-									      <img class="gallery-img" src="images/Art/2d/114.jpg" alt="symbol image">
-								    	</a>
-								    </figure>
-								    <figure class="gallery-frame">
-								    	<a href="images/Art/2d/116.jpg" target="_blank">
-									      <img class="gallery-img" src="images/Art/2d/116.jpg" alt="symbol image">
-								    	</a>
-								    </figure>
-								    <figure class="gallery-frame">
-								    	<a href="images/Art/2d/115.jpg" target="_blank">
-									      <img class="gallery-img" src="images/Art/2d/115.jpg" alt="symbol image">
-								    	</a>
-								    </figure>
-								    <figure class="gallery-frame">
-								    	<a href="images/Art/2d/118.jpg" target="_blank">
-									      <img class="gallery-img" src="images/Art/2d/118.jpg" alt="symbol image">
-								    	</a>
-								    </figure>
-								    <figure class="gallery-frame">
-								    	<a href="images/Art/2d/120.jpg" target="_blank">
-									      <img class="gallery-img" src="images/Art/2d/120.jpg" alt="symbol image">
-								    	</a>
-								    </figure>
-								    <figure class="gallery-frame">
-								    	<a href="images/Art/2d/122.jpg" target="_blank">
-									      <img class="gallery-img" src="images/Art/2d/122.jpg" alt="symbol image">
-								    	</a>
-								    </figure>
-								    <figure class="gallery-frame">
-								    	<a href="images/Art/2d/125.jpg" target="_blank">
-									      <img class="gallery-img" src="images/Art/2d/125.jpg" alt="symbol image">
-								    	</a>
-								    </figure>
-								    <figure class="gallery-frame">
-								    	<a href="images/Art/2d/126.jpg" target="_blank">
-									      <img class="gallery-img" src="images/Art/2d/126.jpg" alt="symbol image">
-								    	</a>
-								    </figure>
-								    <figure class="gallery-frame">
-								    	<a href="images/Art/2d/127.jpg" target="_blank">
-									      <img class="gallery-img" src="images/Art/2d/127.jpg" alt="symbol image">
-								    	</a>
-								    </figure>
-								    <figure class="gallery-frame">
-								    	<a href="images/Art/2d/111.jpg" target="_blank">
-									      <img class="gallery-img" src="images/Art/2d/111.jpg" alt="symbol image">
-								    	</a>
-								    </figure>
-								    <figure class="gallery-frame">
-								    	<a href="images/Art/2d/112.jpg" target="_blank">
-									      <img class="gallery-img" src="images/Art/2d/112.jpg" alt="symbol image">
-								    	</a>
-								    </figure>
-								    <figure class="gallery-frame">
-								    	<a href="images/Art/2d/113.jpg" target="_blank">
-									      <img class="gallery-img" src="images/Art/2d/113.jpg" alt="symbol image">
-								    	</a>
-								    </figure>
-								    
-								  </div><!-- end:gallery-grid -->
-							</article>
-							<!-- 3d art -->
-							<article id="3dart">
-								<h2 class="major">3d Art</h2>
-								<p>In the realm of 3D art, I've dabbled in modeling, rigging, animation, character design, vehicle modeling, and texturing, to name a few. My trusted tools are Blender and Substance Painter. Although I'm primarily a programmer, I can still hold my own in the 3D art arena. So, when the need arises, I can step in and bridge the gap, ensuring that the artistic side of the project remains in good hands. It's all about flexibility and ensuring a harmonious blend of art and technology.</p>
-								<div class="gallery-grid">
-								    <figure class="gallery-frame">
-								    	<a href="images/Art/3d/124.jpg" target="_blank">
-									      <img class="gallery-img" src="images/Art/3d/124.jpg" alt="symbol image">
-								    	</a>
-								    </figure>
-								    <figure class="gallery-frame">
-								    	<a href="images/Art/3d/123.jpg" target="_blank">
-									      <img class="gallery-img" src="images/Art/3d/123.jpg" alt="symbol image">
-								    	</a>
-								    </figure>
-								    <figure class="gallery-frame">
-								    	<a href="images/Art/3d/114.png" target="_blank">
-									      <img class="gallery-img" src="images/Art/3d/114.png" alt="symbol image">
-								    	</a>
-								    </figure>
-								    <figure class="gallery-frame">
-								    	<a href="images/Art/3d/119.png" target="_blank">
-									      <img class="gallery-img" src="images/Art/3d/119.png" alt="symbol image">
-								    	</a>
-								    </figure>
-								    <figure class="gallery-frame">
-								    	<a href="images/Art/3d/120.jpg" target="_blank">
-									      <img class="gallery-img" src="images/Art/3d/120.jpg" alt="symbol image">
-								    	</a>
-								    </figure>
-								    <figure class="gallery-frame">
-								    	<a href="images/Art/3d/121.jpg" target="_blank">
-									      <img class="gallery-img" src="images/Art/3d/121.jpg" alt="symbol image">
-								    	</a>
-								    </figure>
-								    <figure class="gallery-frame">
-								    	<a href="images/Art/3d/115.png" target="_blank">
-									      <img class="gallery-img" src="images/Art/3d/115.png" alt="symbol image">
-								    	</a>
-								    </figure>
-								    <figure class="gallery-frame">
-								    	<a href="images/Art/3d/118.png" target="_blank">
-									      <img class="gallery-img" src="images/Art/3d/118.png" alt="symbol image">
-								    	</a>
-								    </figure>
-								    <figure class="gallery-frame">
-								    	<a href="images/Art/3d/116.png" target="_blank">
-									      <img class="gallery-img" src="images/Art/3d/116.png" alt="symbol image">
-								    	</a>
-								    </figure>
-								    <figure class="gallery-frame">
-								    	<a href="images/Art/3d/117.png" target="_blank">
-									      <img class="gallery-img" src="images/Art/3d/117.png" alt="symbol image">
-								    	</a>
-								    </figure>
-								    <figure class="gallery-frame">
-								    	<a href="images/Art/3d/111.png" target="_blank">
-									      <img class="gallery-img" src="images/Art/3d/111.png" alt="symbol image">
-								    	</a>
-								    </figure>
-								    <figure class="gallery-frame">
-								    	<a href="images/Art/3d/128.png" target="_blank">
-									      <img class="gallery-img" src="images/Art/3d/128.png" alt="symbol image">
-								    	</a>
-								    </figure>
-								    <figure class="gallery-frame">
-								    	<a href="images/Art/3d/125.png" target="_blank">
-									      <img class="gallery-img" src="images/Art/3d/125.png" alt="symbol image">
-								    	</a>
-								    </figure>
-								    <figure class="gallery-frame">
-								    	<a href="images/Art/3d/126.png" target="_blank">
-									      <img class="gallery-img" src="images/Art/3d/126.png" alt="symbol image">
-								    	</a>
-								    </figure>
-								    <figure class="gallery-frame">
-								    	<a href="images/Art/3d/113.png" target="_blank">
-									      <img class="gallery-img" src="images/Art/3d/113.png" alt="symbol image">
-								    	</a>
-								    </figure>
-								    <figure class="gallery-frame">
-								    	<a href="images/Art/3d/122.png" target="_blank">
-									      <img class="gallery-img" src="images/Art/3d/122.png" alt="symbol image">
-								    	</a>
-								    </figure>
-								    <figure class="gallery-frame">
-								    	<a href="images/Art/3d/112.jpg" target="_blank">
-									      <img class="gallery-img" src="images/Art/3d/112.jpg" alt="symbol image">
-								    	</a>
-								    </figure>
-								    <figure class="gallery-frame">
-								    	<a href="images/Art/3d/129.png" target="_blank">
-									      <img class="gallery-img" src="images/Art/3d/129.png" alt="symbol image">
-								    	</a>
-								    </figure>
-								  </div><!-- end:gallery-grid -->
-							</article>
+        .logo i {
+            margin-right: 10px;
+            font-size: 28px;
+        }
 
-						<!-- Contact -->
-							<article id="contact">
-								<h2 class="major">Contact</h2>
-								<p>Iran - Tehran - Tajrish - Qeytarieh</p>
-								<p>voldorel@gmail.com</p>
-								<ul class="icons">
-									<li><a href="https://discordapp.com/users/240655130213482496" class="icon brands fa-discord" target="_blank"><span class="label">Discord</span></a></li>
-									<li><a href="https://t.me/m3hdi1997" class="icon brands fa-telegram"><span class="label" target="_blank">Telegram</span></a></li>
-									<li><a href="https://www.instagram.com/mehdi_parvan/" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
-									<li><a href="https://github.com/voldorel/" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-								</ul>
-							</article>
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
 
-						<!-- Elements -->
-							<article id="elements">
-								<h2 class="major">Elements</h2>
+        .nav-links li {
+            margin-left: 30px;
+        }
 
-								<section>
-									<h3 class="major">Text</h3>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<h6>Heading Level 6</h6>
-									<hr />
-									<h4>Blockquote</h4>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h4>Preformatted</h4>
-									<pre><code>i = 0;
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            font-size: 16px;
+            transition: color 0.3s ease;
+            position: relative;
+        }
 
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
+        .nav-links a:hover {
+            color: var(--primary);
+        }
 
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-								</section>
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            bottom: -5px;
+            left: 0;
+            transition: width 0.3s ease;
+        }
 
-								<section>
-									<h3 class="major">Lists</h3>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
 
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
+        .gallery-item img {
+            width: 12em;
+            max-height: 14em;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
 
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
+        .gallery-item img:hover {
+            transform: scale(1.05);
+        }
 
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
+        .nav-links a:hover::after {
+            width: 100%;
+        }
 
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</section>
+        .hamburger {
+            display: none;
+            cursor: pointer;
+        }
 
-								<section>
-									<h3 class="major">Table</h3>
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background-color: var(--dark);
+            margin: 5px;
+            transition: all 0.3s ease;
+        }
 
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, rgba(108, 92, 231, 0.1) 0%, rgba(0, 206, 201, 0.1) 100%);
+        }
 
-								<section>
-									<h3 class="major">Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+            opacity: 0.1;
+            z-index: -1;
+        }
 
-								<section>
-									<h3 class="major">Form</h3>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-											</div>
-											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
+        .hero-content {
+            max-width: 600px;
+        }
 
-							</article>
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            color: var(--dark);
+        }
 
-					</div>
+        .hero h1 span {
+            color: var(--primary);
+        }
 
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">&copy; Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
+        .hero h2 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            color: var(--primary-dark);
+        }
 
-			</div>
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 40px;
+            color: #555;
+        }
 
-		<!-- BG -->
-			<div id="bg"></div>
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+        }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
 
-	</body>
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+            border: 2px solid var(--primary);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            border-color: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(108, 92, 231, 0.3);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(108, 92, 231, 0.3);
+        }
+
+        /* About/Skills Section */
+        .section {
+            padding: 100px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            font-size: 36px;
+            font-weight: 800;
+            color: var(--dark);
+            margin-bottom: 15px;
+        }
+
+        .section-title p {
+            color: #777;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            margin-bottom: 60px;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-text h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: var(--primary-dark);
+        }
+
+        li {
+            color: #777;
+        }
+
+        .about-text p{
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .skill-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill-card i {
+            font-size: 40px;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        .skill-card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .skill-card p {
+            color: #777;
+            font-size: 14px;
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-image {
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .project-card:hover .project-image img {
+            transform: scale(1.1);
+        }
+
+        .project-info {
+            padding: 25px;
+            font-size: .9em;
+            line-height: 1.5em;
+        }
+
+        .project-info h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: var(--dark);
+        }
+
+        .project-info p {
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .tag {
+            background-color: var(--light);
+            color: var(--primary);
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .project-links a {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .project-links a:hover {
+            color: var(--primary-dark);
+        }
+
+        /* Experience Section */
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 3px;
+            background-color: var(--primary);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -1.5px;
+        }
+
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border: 3px solid var(--primary);
+            border-radius: 50%;
+            top: 15px;
+            z-index: 1;
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .right {
+            left: 50%;
+        }
+
+        .right::after {
+            left: -10px;
+        }
+
+        .left::after {
+            right: -10px;
+        }
+
+        .timeline-content {
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .timeline-content h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: var(--primary-dark);
+        }
+
+        .timeline-content h4 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: var(--dark);
+        }
+
+        .timeline-date {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: var(--light);
+            color: var(--primary);
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .timeline-content p {
+            color: #555;
+            font-size: 14px;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: linear-gradient(135deg, rgba(108, 92, 231, 0.1) 0%, rgba(0, 206, 201, 0.1) 100%);
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--dark);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .form-control:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.2);
+            outline: none;
+        }
+
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 60px 0 20px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .footer-column {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 30px;
+        }
+
+        .footer-column h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: var(--secondary);
+        }
+
+        .footer-column p {
+            color: #bbb;
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background-color: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #bbb;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #bbb;
+            font-size: 14px;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 992px) {
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            .hero h2 {
+                font-size: 20px;
+            }
+
+            .about-content {
+                flex-direction: column;
+            }
+
+            .timeline::after {
+                left: 31px;
+            }
+
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+
+            .timeline-item::after {
+                left: 21px;
+            }
+
+            .left::after, .right::after {
+                left: 21px;
+            }
+
+            .right {
+                left: 0;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .nav-links {
+                position: absolute;
+                top: 80px;
+                right: -100%;
+                width: 250px;
+                height: calc(100vh - 80px);
+                background-color: white;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                padding-top: 40px;
+                transition: right 0.5s ease;
+                box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav-links.active {
+                right: 0;
+            }
+
+            .nav-links li {
+                margin: 15px 0;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .hamburger.active div:nth-child(1) {
+                transform: rotate(-45deg) translate(-5px, 6px);
+            }
+
+            .hamburger.active div:nth-child(2) {
+                opacity: 0;
+            }
+
+            .hamburger.active div:nth-child(3) {
+                transform: rotate(45deg) translate(-5px, -6px);
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media screen and (max-width: 576px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .section-title h2 {
+                font-size: 28px;
+            }
+
+            .skill-card {
+                padding: 20px 15px;
+            }
+
+            .contact-form {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- Header -->
+<header id="header">
+    <div class="container">
+        <nav class="navbar">
+            <a href="#" class="logo"><i class="fas fa-gamepad"></i> Mehdi Parvan</a>
+            <ul class="nav-links">
+                <li><a href="#skills">About</a></li>
+                <li><a href="#projects">Games</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Hi, I am <span>Mehdi Parvan</span></h1>
+            <h2>Game Developer & Technical Artist</h2>
+            <p>Creating immersive gaming experiences with cutting-edge technology and innovative design. Specializing in Unity development and Technical Art with over 4 years of professional experience in the gaming industry.</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-primary">Download My CV</a>
+                <a href="#contact" class="btn btn-outline">Hire Me</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="section">
+    <div class="container">
+        <div class="section-title">
+            <h2>About Me</h2>
+            <p>I'm Mehdi Parvan. 27 currently in living in Tehran and working as a game developer.</p>
+            <p>With a passion for creating engaging mobile games, I bring extensive experience and technical expertise to every project.</p>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Game Development Expertise</h3>
+                <p>I specialize in Unity game development, merging technical expertise with a strong artistic vision. I design high-performance, visually stunning mobile games, expertly navigating the full development pipeline—from concept and programming to shaders, VFX, rendering, and performance optimization. My comprehensive skill set enhances gameplay, UI, and overall player experience.</p>
+            </div>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fab fa-unity"></i>
+                <h3>Unity Engine</h3>
+                <p>4+ years experience developing games with Unity</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-code"></i>
+                <h3>C# Programming</h3>
+                <p>Advanced C# skills for game logic and systems</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Mobile Optimization</h3>
+                <p>Expert in performance optimization for mobile</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-gamepad"></i>
+                <h3>Tech Art</h3>
+                <p>3D Modelling, Asset Integration, Shaders and animations</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-server"></i>
+                <h3>Backend Integration</h3>
+                <p>Experience with server-side game features like ASP.Net and Nakama</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-users"></i>
+                <h3>Team Player</h3>
+                <p>Efficient Teamwork Experience</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="section bg-light">
+    <div class="container">
+        <div class="section-title">
+            <h2>Projects</h2>
+            <p>Here are some of my notable game development projects that showcase my skills and experience.</p>
+        </div>
+        <div class="projects-grid">
+<!--            <div class="project-card" data-url="avangard111.html">-->
+            <div class="project-card">
+                <div class="project-image">
+                    <img class="gallery-img" src="images/Gif/Mencherz.webp" alt="symbol image">
+                </div>
+                <div class="project-info">
+                    <h3>Mencherz</h3>
+                    <p>Top grossing online game in Iran with more than 5 million installs on the local market. For Mencherz, I transformed the UI with intricate animations using Dotween, Spine, and Blender, crafting a captivating player experience. I implemented particle systems—think stars and chains—to add flair, while my VIP Intro set a striking tone for the game. I built the Render Lab tool, enabling the art team to produce top-notch showcases from in-game assets with ease. Applying SOLID Principles and UML diagrams, I optimized project clarity, streamlining collaboration with QA testers via Agile practices. My tasks, like sort animations, showcased my blend of technical precision and artistic creativity. Every contribution was designed to elevate both functionality and aesthetics.
+                    </p>
+                    <li>Studio: Incytel Games</li>
+                    <li>Platforms: Android/IOS</li>
+                    <li>Team Size: 30+</li>
+                    <li>Time Estimation: ~2 years (Feb 2024 – present) </li>
+                    <li>Engine and Tools: Unity, Blender, Dotween, Spine</li>
+
+                    <div class="project-tags">
+                        <span class="tag">Unity</span>
+                        <span class="tag">C#</span>
+                        <span class="tag">TechArt</span>
+                        <span class="tag">Ludo</span>
+                    </div>
+                    <p>
+                        <a href="https://www.linkedin.com/posts/mehdi-parvan-295332196_gamedev-indiedev-shaders-activity-7272265104295878658-u51s?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC33hhEBu008WVdN_hguZylCRww3pqx_4Ls"> LinkedIn post of my work</a>
+                    </p>
+                    <p>
+                        <a href="https://www.linkedin.com/posts/mehdi-parvan-295332196_gamedev-indiedev-shaders-activity-7305216351382429696-C3NL?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC33hhEBu008WVdN_hguZylCRww3pqx_4Ls"> LinkedIn post of my work</a>
+                    </p>
+                    <div class="project-links">
+                        <a href="https://play.google.com/store/apps/details?id=com.incyteltech.mencherz"><i class="fab fa-google-play"></i> Play Store</a>
+                        <a href="https://t.ly/9681"><i class="fab fa-apple"></i> App Store</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img class="gallery-img" src="images/Gif/matchtori.webp" alt="symbol image">
+                </div>
+                <div class="project-info">
+                    <h3>MatchTori</h3>
+                    <p>What I did: I Launched my own online game with the collaboration with my friend, MatchTori, an Online PvP match-3 game, building it from scratch using Unity, ASP.NET, and Nakama for real-time multiplayer functionality. I designed and implemented the game loop, turn-based mechanics, boosters, and particle effects, while tackling challenges like animation synchronization and network disconnects. Challenges included resolving issues such as server-client sync, timer bugs, and responsiveness across devices. I collaborated with a teammate (Taha) to refine configs, perks, and AI behavior, ensuring a polished experience. Through iterative testing, I fixed gameplay glitches—like rocket bugs and booster consumption—leading to a successful launch with positive reception.</p>
+                    <li>Studio: Personal Startup</li>
+                    <li>Platforms: Android</li>
+                    <li>Team Size: 2</li>
+                    <li>Time Estimation: Ongoing (Jan 2023 - Present) </li>
+                    <li>Engine and Tools: Unity, ASP.NET, Nakama, Blender</li>
+
+                    <div class="project-tags">
+                        <span class="tag">Unity</span>
+                        <span class="tag">C#</span>
+                        <span class="tag">Mobile</span>
+                        <span class="tag">Match3</span>
+                        <span class="tag">Nakama</span>
+                    </div>
+
+                    <p>
+                        <a href="https://www.linkedin.com/posts/mehdi-parvan-295332196_mobilegame-gamedev-androidgame-activity-7297955536212291584-43ys?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC33hhEBu008WVdN_hguZylCRww3pqx_4Ls"> LinkedIn post of my work</a>
+                    </p>
+                    <p>
+                        <a href="https://www.linkedin.com/posts/mehdi-parvan-295332196_gamedev-indiedev-shaders-activity-7276623028518629376-KAE4?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC33hhEBu008WVdN_hguZylCRww3pqx_4Ls"> LinkedIn post of my work</a>
+                    </p>
+                    <div class="project-links">
+                        <a href="https://myket.ir/app/com.dreambytestudio.matchtori"><i class="fa-solid fa-download"></i> Myket</a>
+                        <a href="https://cafebazaar.ir/app/com.dreambytestudio.matchtori?l=en"><i class="fa-solid fa-download"></i> Bazaar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img class="gallery-img" src="images/Gif/coup.webp" alt="symbol image">
+                </div>
+                <div class="project-info">
+                    <h3>Leaders of Coup</h3>
+                    <p>I implemented some game mechanics, UI animations and effects, developed two character abilities in Leaders of Coup, including their game custom VFX and SFX—like coin/gem effects and anarchist sounds—to bring their abilities to life. Working closely with the Tech Lead and Art Lead, I developed rendering tools that empowered the art team to create high-quality showcase materials from in-game content effortlessly. I introduced over 10 particle systems, including electricity and smoke, adding visual depth across the game. My rendering techniques blended 3D elements into a 2D UI using extra cameras and render textures, seamlessly integrating with Spine-animated components. I also implemented features like the lucky-wheel and in-game chats, enhancing player engagement. From daily rewards to shuffle animations, my contributions ensured a polished and dynamic experience.</p>
+                    <li>Studio: Incytel Games</li>
+                    <li>Platforms: Android/IOS</li>
+                    <li>Team Size: 8 (for this project)</li>
+                    <li>Time Estimation: ~2 years </li>
+                    <li>Engine and Tools: Unity, Blender, Photoshop, URP, Audacity, Dotween</li>
+
+                    <div class="project-tags">
+                        <span class="tag">Unity</span>
+                        <span class="tag">Online</span>
+                        <span class="tag">VFX</span>
+                        <span class="tag">TechArt</span>
+                    </div>
+                    <p>
+                        <a href="https://www.linkedin.com/posts/mehdi-parvan-295332196_gamedev-indiedev-shaders-activity-7277334601595850752-9LMe?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC33hhEBu008WVdN_hguZylCRww3pqx_4Ls"> LinkedIn post of my work</a>
+                    </p>
+                    <p>
+                        <a href="https://www.linkedin.com/posts/mehdi-parvan-295332196_gamedev-indiedev-animation-activity-7272621358881112065-Rm7A?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC33hhEBu008WVdN_hguZylCRww3pqx_4Ls"> LinkedIn post of my work</a>
+                    </p>
+                    <div class="project-links">
+                        <a href="https://cafebazaar.ir/app/com.incytel.coup?l=en"><i class="fa-solid fa-download"></i> Bazaar</a>
+                        <a href="https://myket.ir/app/com.incytel.coup"><i class="fa-solid fa-download"></i> Myket</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img class="gallery-img" src="images/Gif/heli.webp" alt="symbol image">
+                </div>
+                <div class="project-info">
+                    <h3>SH-3 Sea King Simulator</h3>
+                    <p>What I did: I engineered realistic helicopter controls and physics for a VR simulation, using Unity’s XR Toolkit to ensure intuitive VR interactions. I modeled takeoff, landing, and turret mechanics, focusing on accurate flight dynamics. Collaborating with designers, I refined the experience based on user feedback for maximum immersion. I addressed performance challenges to maintain smooth gameplay in VR. The result was a highly engaging simulation praised for its realism. This project strengthened my expertise in VR and physics-based development.
+</p>
+                    <li>Contractor: Research and Entertainment Client</li>
+                    <li>Meta Quest 2/3</li>
+                    <li>Team Size: 1 (+ guidance and design docs)</li>
+                    <li>Time Estimation: 6 months </li>
+                    <li>Engine and Tools: Unity, Oculus Integration Package</li>
+
+                    <div class="project-tags">
+                        <span class="tag">Unity</span>
+                        <span class="tag">Oculus</span>
+                        <span class="tag">VR</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img class="gallery-img" src="images/Gif/Hakem.webp" alt="symbol image">
+                </div>
+                <div class="project-info">
+                    <h3>Hakem Sho</h3>
+                    <p>In Hakem Sho, I engineered a system to manage all in-game scene animations, orchestrating cameras, lights, shaders, and custom props for a cinematic experience. I animated win/lose panels, intro sequences, card shuffles, and shop shines using Dotween and Spine, delivering fluid and engaging visuals. My feature implementations included shop enhancements, scene transitions, end game panels, post-game chatroom, boosting player interaction and retention. I tackled tasks like level-ups, endgame sequences, and chip transitions, ensuring each moment felt rewarding. Loading screens and splash animations were optimized for mobile, maintaining immersion during transitions. Collaborating with the team, I refined workflows with Agile methodology, making development cycles efficient and effective.</p>
+                    <li>Studio: Incytel Games</li>
+                    <li>Platforms: Android/IOS</li>
+                    <li>Team Size: 5 (for this project)</li>
+                    <li>Time Estimation: ~1 years </li>
+                    <li>Engine and Tools: Unity, C#, Spine, Dotween, Shader Graphs</li>
+
+                    <div class="project-tags">
+                        <span class="tag">Unity</span>
+                        <span class="tag">C#</span>
+                        <span class="tag">Mobile</span>
+                        <span class="tag">RPG</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://play.google.com/store/apps/details?gl=US&hl=en&id=com.incytel.hakemsho"><i class="fab fa-google-play"></i> Play Store</a>
+                        <a href="https://t.ly/yzHLC"><i class="fab fa-apple"></i> App Store</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img class="gallery-img1" src="images/Gif/mafia.gif" alt="symbol image">
+                </div>
+                <div class="project-info">
+                    <h3>Mafia Dar Shahr</h3>
+                    <p>What I did: As a Gameplay Engineer, I developed core mechanics for Mafia Dar Shar, a social game with over 500,000 players, using Unity and WebSocket for real-time multiplayer. I optimized network communication and synchronization to ensure seamless interactions across devices. I leveraged blue-green deployment to facilitate smooth updates, minimizing player downtime. Using Unity’s Asset Bundles and UnityWebRequest, I streamlined asset delivery for efficiency. My contributions enhanced gameplay and supported the game’s commercial success. This project honed my skills in large-scale deployment and network programming.</p>
+                    <li>Studio: Amytis Entertainment</li>
+                    <li>Platforms: Android/IOS</li>
+                    <li>Team Size: 8+ </li>
+                    <li>Time Estimation: ~3 years </li>
+                    <li>Engine and Tools: Unity, C#</li>
+
+                    <div class="project-tags">
+                        <span class="tag">Unity</span>
+                        <span class="tag">C#</span>
+                        <span class="tag">Mafia</span>
+                        <span class="tag">Online</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://cafebazaar.ir/app/com.amytis.mafiaincity?l=en"><i class="fa-solid fa-download"></i> Bazaar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img class="gallery-img" src="images/Gif/Hideout.gif" alt="symbol image">
+                </div>
+                <div class="project-info">
+                    <h3>Hideout Survival</h3>
+                    <p>This is a very old game that created using Game Maker Studio 1.4 around 6 years ago. I was learning about spine integration, I created my own custom ragdoll component and shooting mechanics. This was a short project in collaboration with a small art animation studio called Vulture Head. I also created twin stick movement mechanics for this game</p>
+                    <li>Platforms: Android, PC</li>
+                    <li>Team Size: 4</li>
+                    <li>Time Estimation: ~6 months </li>
+                    <li>Engine and Tools: Game Maker Studio, Spine</li>
+
+                    <div class="project-tags">
+                        <span class="tag">GameMakerStudio</span>
+                        <span class="tag">GML</span>
+                        <span class="tag">Spine</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img class="gallery-img" src="images/Gif/Hitrun.gif" alt="symbol image">|
+                </div>
+                <div class="project-info">
+                    <h3>Run&Gun Clone Prototype</h3>
+                    <p>What I did: For a game jam, I built a vertical slice of Run & Gun, a hyper-casual game, using Unity under tight deadlines. I implemented fluid movement and shooting mechanics for instant playability. I designed and animated the core loop to keep players engaged. Taking on programming and asset creation, I collaborated with a small team. The polished prototype earned positive feedback from players and judges. This project demonstrated my ability to deliver under pressure.</p>
+                    <li>Studio: Personal Project</li>
+                    <li>Platforms: PC</li>
+                    <li>Team Size: 1</li>
+                    <li>Time Estimation: 1 month </li>
+                    <li>Engine and Tools: Unity, Blender</li>
+
+                    <div class="project-tags">
+                        <span class="tag">Unity</span>
+                        <span class="tag">C#</span>
+                        <span class="tag">Prototype</span>
+                        <span class="tag">Casual</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/voldorel/Run-n-Gun-Challenge"><i class="fa-brands fa-github"></i> Source </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="gallery" class="section">
+    <div class="container">
+        <div class="section-title">
+            <h2>My Artworks</h2>
+            <p>Art has been a part of my life for over a decade. I've been sketching and creating portraits with a deep passion. I've also explored digital art and animation. In addition, I've had the privilege of showcasing my work in two art exhibitions, allowing me to share my creativity with a broader audience. This love for art, whether on paper or in pixels, continues to inspire me as I aim to create visually captivating experiences in game development.</p>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <a href="images/Art/3d/119.png" target="_blank">
+                    <img class="gallery-img" src="images/Art/3d/119.png" alt="symbol image">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="images/Art/3d/112.jpg" target="_blank">
+                    <img class="gallery-img" src="images/Art/3d/112.jpg" alt="symbol image">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="images/Art/3d/114.jpg" target="_blank">
+                    <img class="gallery-img" src="images/Art/3d/114.jpg" alt="symbol image">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="images/Art/3d/124.jpg" target="_blank">
+                    <img class="gallery-img" src="images/Art/3d/124.jpg" alt="symbol image">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="images/Art/2d/111.jpg" target="_blank">
+                    <img class="gallery-img" src="images/Art/2d/111.jpg" alt="symbol image">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="images/Art/2d/141.png" target="_blank">
+                    <img class="gallery-img" src="images/Art/2d/141.png" alt="symbol image">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="images/Art/2d/114.jpg" target="_blank">
+                    <img class="gallery-img" src="images/Art/2d/114.jpg" alt="symbol image">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="images/Art/2d/142.png" target="_blank">
+                    <img class="gallery-img" src="images/Art/2d/142.png" alt="symbol image">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="images/Art/2d/143.png" target="_blank">
+                    <img class="gallery-img" src="images/Art/2d/143.png" alt="symbol image">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="images/Art/2d/144.png" target="_blank">
+                    <img class="gallery-img" src="images/Art/2d/144.png" alt="symbol image">
+                </a>
+            </div>
+    </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="section">
+    <div class="container">
+        <div class="section-title">
+            <h2>My Experience</h2>
+            <p>My professional journey through the game development industry.</p>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <span class="timeline-date">Jan 2023 - present</span>
+                    <h3>Game Startup Co-Founder</h3>
+                    <h4>Incytel Games, Tehran</h4>
+                    <p>I launched Match Tori, a PvP match-3 game December 2024 . I designed and built the game from the ground up with turn-based multiplayer functionality, while collaborating with a teammate to refine features and optimize performance for mobile.</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <span class="timeline-date">October 2024 – present</span>
+                    <h3>Technical Artist</h3>
+                    <h4>Incytel Games, Tehran</h4>
+                    <p>I worked on shaders, animations, game mechanics, VFX and SFX, asset integration, easing tech art communication in one of Iran's most successful game companies. </p>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <span class="timeline-date">Feb 2024 – October 2024</span>
+                    <h3>Game Engineer</h3>
+                    <h4>Incytel Games, Tehran</h4>
+                    <p>When I first joined this company, I implemented game mechanics and integrated online services for mobile games using Unity, creating engaging multiplayer experiences for Android and iOS users.</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <span class="timeline-date">Feb 2021 – Dec 2023 </span>
+                    <h3>Junior Unity Developer</h3>
+                    <h4>Amytis Entertainment, Tehran</h4>
+                    <p>Spearheaded development for the Mafia Dar Shar's client. Later led a small team of 2 developers and organized project tasks</p>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <span class="timeline-date">Oct 2015 – Feb 2019</span>
+                    <h3>Computer Engineering Associate</h3>
+                    <h4>University of Tehran, Iran</h4>
+                    <p>Graduated, Associate of Arts, Computer Engineering and did some side freelancing projects as a programmer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section contact">
+    <div class="container">
+        <div class="section-title">
+            <h2 class="major">Contact</h2>
+            <p>Iran - Tehran - Tajrish - Qeytarieh</p>
+            <p>voldorel@gmail.com</p>
+            <p>Telegram: @m3hdi1997</p>
+            <p>
+                <a href="https://www.linkedin.com/in/mehdi-parvan-295332196">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </p>
+            <p>
+                <a href="https://github.com/voldorel"><i class="fab fa-github">
+                </i>
+                </a>
+            </p>
+        </div>
+<!--        <div class="contact-form">-->
+<!--&lt;!&ndash;            <form>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="form-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <label for="name">Your Name</label>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <input type="text" id="name" class="form-control" required>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="form-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <label for="email">Email Address</label>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <input type="email" id="email" class="form-control" required>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="form-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <label for="subject">Subject</label>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <input type="text" id="subject" class="form-control" required>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="form-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <label for="message">Your Message</label>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <textarea id="message" class="form-control" required></textarea>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <button type="submit" class="btn btn-primary">Send Message</button>&ndash;&gt;-->
+<!--&lt;!&ndash;            </form>&ndash;&gt;-->
+<!--        </div>-->
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Mehdi Parvan</h3>
+                <p>Game Developer & Technical Artist creating immersive gaming experiences with cutting-edge technology.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/mehdi-parvan-295332196/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://t.me/m3hdi1997"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="https://github.com/voldorel/"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#skills">About</a></li>
+                    <li><a href="#projects">Games</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+<!--            <div class="footer-column">-->
+<!--                <h3>Game Platforms</h3>-->
+<!--                <ul class="footer-links">-->
+<!--                    <li><a href="#"><i class="fab fa-google-play"></i> Google Play</a></li>-->
+<!--                    <li><a href="#"><i class="fab fa-apple"></i> App Store</a></li>-->
+<!--                    <li><a href="#"><i class="fab fa-steam"></i> Steam</a></li>-->
+<!--                    <li><a href="#"><i class="fab fa-itch-io"></i> Itch.io</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Mehdi Parvan. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Mobile Navigation
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    const navLinksItems = document.querySelectorAll('.nav-links li');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        hamburger.classList.toggle('active');
+    });
+
+    navLinksItems.forEach(item => {
+        item.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            hamburger.classList.remove('active');
+        });
+    });
+
+    // Header Scroll Effect
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 100) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+
+    // Smooth Scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+    document.querySelectorAll('.project-card').forEach(card => {
+        card.addEventListener('click', function(e) {
+            if (e.target.tagName !== 'A') { // Ignore clicks on existing links
+                const url = this.getAttribute('data-url');
+                if (url) {
+                    window.location.href = url;
+                }
+            }
+        });
+    });
+</script>
+</body>
 </html>
