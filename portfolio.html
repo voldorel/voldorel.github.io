@@ -107,6 +107,24 @@
             transition: width 0.3s ease;
         }
 
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item img {
+            width: 12em;
+            max-height: 14em;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.05);
+        }
+
         .nav-links a:hover::after {
             width: 100%;
         }
@@ -255,7 +273,11 @@
             color: var(--primary-dark);
         }
 
-        .about-text p {
+        li {
+            color: #777;
+        }
+
+        .about-text p{
             margin-bottom: 20px;
             color: #555;
         }
@@ -300,7 +322,7 @@
         /* Projects Section */
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
             gap: 30px;
         }
 
@@ -318,7 +340,7 @@
         }
 
         .project-image {
-            height: 200px;
+            height: 250px;
             overflow: hidden;
         }
 
@@ -335,6 +357,8 @@
 
         .project-info {
             padding: 25px;
+            font-size: .9em;
+            line-height: 1.5em;
         }
 
         .project-info h3 {
@@ -715,10 +739,10 @@
         <nav class="navbar">
             <a href="#" class="logo"><i class="fas fa-gamepad"></i> Mehdi Parvan</a>
             <ul class="nav-links">
-                <li><a href="#skills">My Skills</a></li>
+                <li><a href="#skills">About</a></li>
                 <li><a href="#projects">Games</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Hire Me</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="hamburger">
                 <div></div>
@@ -734,8 +758,8 @@
     <div class="container">
         <div class="hero-content">
             <h1>Hi, I am <span>Mehdi Parvan</span></h1>
-            <h2>Senior Game & Unity Developer</h2>
-            <p>Creating immersive gaming experiences with cutting-edge technology and innovative design. Specializing in Unity development with over 8 years of professional experience in the gaming industry.</p>
+            <h2>Game Developer & Technical Artist</h2>
+            <p>Creating immersive gaming experiences with cutting-edge technology and innovative design. Specializing in Unity development and Technical Art with over 4 years of professional experience in the gaming industry.</p>
             <div class="hero-buttons">
                 <a href="#" class="btn btn-primary">Download My CV</a>
                 <a href="#contact" class="btn btn-outline">Hire Me</a>
@@ -748,21 +772,21 @@
 <section id="skills" class="section">
     <div class="container">
         <div class="section-title">
-            <h2>My Skills</h2>
+            <h2>About Me</h2>
+            <p>I'm Mehdi Parvan. 27 currently in living in Tehran and working as a game developer.</p>
             <p>With a passion for creating engaging mobile games, I bring extensive experience and technical expertise to every project.</p>
         </div>
         <div class="about-content">
             <div class="about-text">
                 <h3>Game Development Expertise</h3>
-                <p>I specialize in Unity game development with a focus on creating high-performance, visually stunning games for mobile platforms. My technical skills span the entire game development pipeline from concept to deployment.</p>
-                <p>I'm particularly passionate about optimizing game performance, implementing engaging gameplay mechanics, and creating intuitive user interfaces that enhance player experience.</p>
+                <p>I specialize in Unity game development, merging technical expertise with a strong artistic vision. I design high-performance, visually stunning mobile games, expertly navigating the full development pipeline—from concept and programming to shaders, VFX, rendering, and performance optimization. My comprehensive skill set enhances gameplay, UI, and overall player experience.</p>
             </div>
         </div>
         <div class="skills-grid">
             <div class="skill-card">
                 <i class="fab fa-unity"></i>
                 <h3>Unity Engine</h3>
-                <p>8+ years experience developing games with Unity</p>
+                <p>4+ years experience developing games with Unity</p>
             </div>
             <div class="skill-card">
                 <i class="fas fa-code"></i>
@@ -776,18 +800,18 @@
             </div>
             <div class="skill-card">
                 <i class="fas fa-gamepad"></i>
-                <h3>Game Design</h3>
-                <p>Strong understanding of game mechanics and UX</p>
+                <h3>Tech Art</h3>
+                <p>3D Modelling, Asset Integration, Shaders and animations</p>
             </div>
             <div class="skill-card">
                 <i class="fas fa-server"></i>
                 <h3>Backend Integration</h3>
-                <p>Experience with server-side game features</p>
+                <p>Experience with server-side game features like ASP.Net and Nakama</p>
             </div>
             <div class="skill-card">
                 <i class="fas fa-users"></i>
-                <h3>Team Leadership</h3>
-                <p>Technical lead and mentor experience</p>
+                <h3>Team Player</h3>
+                <p>Efficient Teamwork Experience</p>
             </div>
         </div>
     </div>
@@ -797,17 +821,141 @@
 <section id="projects" class="section bg-light">
     <div class="container">
         <div class="section-title">
-            <h2>My Games</h2>
+            <h2>Projects</h2>
             <p>Here are some of my notable game development projects that showcase my skills and experience.</p>
         </div>
         <div class="projects-grid">
+<!--            <div class="project-card" data-url="avangard111.html">-->
             <div class="project-card">
                 <div class="project-image">
-                    <img src="https://images.unsplash.com/photo-1542751375-ad40-4ca0-a2c1-6e7871b0f2b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Avangard Game">
+                    <img class="gallery-img" src="images/Gif/Mencherz.webp" alt="symbol image">
                 </div>
                 <div class="project-info">
-                    <h3>Avangard</h3>
-                    <p>A strategy RPG battle game featuring hero selection, beautiful graphics, resource upgrades, and cross-platform optimization.</p>
+                    <h3>Mencherz</h3>
+                    <p>Top grossing online game in Iran with more than 5 million installs on the local market. For Mencherz, I transformed the UI with intricate animations using Dotween, Spine, and Blender, crafting a captivating player experience. I implemented particle systems—think stars and chains—to add flair, while my VIP Intro set a striking tone for the game. I built the Render Lab tool, enabling the art team to produce top-notch showcases from in-game assets with ease. Applying SOLID Principles and UML diagrams, I optimized project clarity, streamlining collaboration with QA testers via Agile practices. My tasks, like sort animations, showcased my blend of technical precision and artistic creativity. Every contribution was designed to elevate both functionality and aesthetics.
+                    </p>
+                    <li>Studio: Incytel Games</li>
+                    <li>Platforms: Android/IOS</li>
+                    <li>Team Size: 30+</li>
+                    <li>Time Estimation: ~2 years (Feb 2024 – present) </li>
+                    <li>Engine and Tools: Unity, Blender, Dotween, Spine</li>
+
+                    <div class="project-tags">
+                        <span class="tag">Unity</span>
+                        <span class="tag">C#</span>
+                        <span class="tag">TechArt</span>
+                        <span class="tag">Ludo</span>
+                    </div>
+                    <p>
+                        <a href="https://www.linkedin.com/posts/mehdi-parvan-295332196_gamedev-indiedev-shaders-activity-7272265104295878658-u51s?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC33hhEBu008WVdN_hguZylCRww3pqx_4Ls"> LinkedIn post of my work</a>
+                    </p>
+                    <p>
+                        <a href="https://www.linkedin.com/posts/mehdi-parvan-295332196_gamedev-indiedev-shaders-activity-7305216351382429696-C3NL?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC33hhEBu008WVdN_hguZylCRww3pqx_4Ls"> LinkedIn post of my work</a>
+                    </p>
+                    <div class="project-links">
+                        <a href="https://play.google.com/store/apps/details?id=com.incyteltech.mencherz"><i class="fab fa-google-play"></i> Play Store</a>
+                        <a href="https://t.ly/9681"><i class="fab fa-apple"></i> App Store</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img class="gallery-img" src="images/Gif/matchtori.webp" alt="symbol image">
+                </div>
+                <div class="project-info">
+                    <h3>MatchTori</h3>
+                    <p>What I did: I Launched my own online game with the collaboration with my friend, MatchTori, an Online PvP match-3 game, building it from scratch using Unity, ASP.NET, and Nakama for real-time multiplayer functionality. I designed and implemented the game loop, turn-based mechanics, boosters, and particle effects, while tackling challenges like animation synchronization and network disconnects. Challenges included resolving issues such as server-client sync, timer bugs, and responsiveness across devices. I collaborated with a teammate (Taha) to refine configs, perks, and AI behavior, ensuring a polished experience. Through iterative testing, I fixed gameplay glitches—like rocket bugs and booster consumption—leading to a successful launch with positive reception.</p>
+                    <li>Studio: Personal Startup</li>
+                    <li>Platforms: Android</li>
+                    <li>Team Size: 2</li>
+                    <li>Time Estimation: Ongoing (Jan 2023 - Present) </li>
+                    <li>Engine and Tools: Unity, ASP.NET, Nakama, Blender</li>
+
+                    <div class="project-tags">
+                        <span class="tag">Unity</span>
+                        <span class="tag">C#</span>
+                        <span class="tag">Mobile</span>
+                        <span class="tag">Match3</span>
+                        <span class="tag">Nakama</span>
+                    </div>
+
+                    <p>
+                        <a href="https://www.linkedin.com/posts/mehdi-parvan-295332196_mobilegame-gamedev-androidgame-activity-7297955536212291584-43ys?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC33hhEBu008WVdN_hguZylCRww3pqx_4Ls"> LinkedIn post of my work</a>
+                    </p>
+                    <p>
+                        <a href="https://www.linkedin.com/posts/mehdi-parvan-295332196_gamedev-indiedev-shaders-activity-7276623028518629376-KAE4?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC33hhEBu008WVdN_hguZylCRww3pqx_4Ls"> LinkedIn post of my work</a>
+                    </p>
+                    <div class="project-links">
+                        <a href="https://myket.ir/app/com.dreambytestudio.matchtori"><i class="fa-solid fa-download"></i> Myket</a>
+                        <a href="https://cafebazaar.ir/app/com.dreambytestudio.matchtori?l=en"><i class="fa-solid fa-download"></i> Bazaar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img class="gallery-img" src="images/Gif/coup.webp" alt="symbol image">
+                </div>
+                <div class="project-info">
+                    <h3>Leaders of Coup</h3>
+                    <p>I implemented some game mechanics, UI animations and effects, developed two character abilities in Leaders of Coup, including their game custom VFX and SFX—like coin/gem effects and anarchist sounds—to bring their abilities to life. Working closely with the Tech Lead and Art Lead, I developed rendering tools that empowered the art team to create high-quality showcase materials from in-game content effortlessly. I introduced over 10 particle systems, including electricity and smoke, adding visual depth across the game. My rendering techniques blended 3D elements into a 2D UI using extra cameras and render textures, seamlessly integrating with Spine-animated components. I also implemented features like the lucky-wheel and in-game chats, enhancing player engagement. From daily rewards to shuffle animations, my contributions ensured a polished and dynamic experience.</p>
+                    <li>Studio: Incytel Games</li>
+                    <li>Platforms: Android/IOS</li>
+                    <li>Team Size: 8 (for this project)</li>
+                    <li>Time Estimation: ~2 years </li>
+                    <li>Engine and Tools: Unity, Blender, Photoshop, URP, Audacity, Dotween</li>
+
+                    <div class="project-tags">
+                        <span class="tag">Unity</span>
+                        <span class="tag">Online</span>
+                        <span class="tag">VFX</span>
+                        <span class="tag">TechArt</span>
+                    </div>
+                    <p>
+                        <a href="https://www.linkedin.com/posts/mehdi-parvan-295332196_gamedev-indiedev-shaders-activity-7277334601595850752-9LMe?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC33hhEBu008WVdN_hguZylCRww3pqx_4Ls"> LinkedIn post of my work</a>
+                    </p>
+                    <p>
+                        <a href="https://www.linkedin.com/posts/mehdi-parvan-295332196_gamedev-indiedev-animation-activity-7272621358881112065-Rm7A?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC33hhEBu008WVdN_hguZylCRww3pqx_4Ls"> LinkedIn post of my work</a>
+                    </p>
+                    <div class="project-links">
+                        <a href="https://cafebazaar.ir/app/com.incytel.coup?l=en"><i class="fa-solid fa-download"></i> Bazaar</a>
+                        <a href="https://myket.ir/app/com.incytel.coup"><i class="fa-solid fa-download"></i> Myket</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img class="gallery-img" src="images/Gif/heli.webp" alt="symbol image">
+                </div>
+                <div class="project-info">
+                    <h3>SH-3 Sea King Simulator</h3>
+                    <p>What I did: I engineered realistic helicopter controls and physics for a VR simulation, using Unity’s XR Toolkit to ensure intuitive VR interactions. I modeled takeoff, landing, and turret mechanics, focusing on accurate flight dynamics. Collaborating with designers, I refined the experience based on user feedback for maximum immersion. I addressed performance challenges to maintain smooth gameplay in VR. The result was a highly engaging simulation praised for its realism. This project strengthened my expertise in VR and physics-based development.
+</p>
+                    <li>Contractor: Research and Entertainment Client</li>
+                    <li>Meta Quest 2/3</li>
+                    <li>Team Size: 1 (+ guidance and design docs)</li>
+                    <li>Time Estimation: 6 months </li>
+                    <li>Engine and Tools: Unity, Oculus Integration Package</li>
+
+                    <div class="project-tags">
+                        <span class="tag">Unity</span>
+                        <span class="tag">Oculus</span>
+                        <span class="tag">VR</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img class="gallery-img" src="images/Gif/Hakem.webp" alt="symbol image">
+                </div>
+                <div class="project-info">
+                    <h3>Hakem Sho</h3>
+                    <p>In Hakem Sho, I engineered a system to manage all in-game scene animations, orchestrating cameras, lights, shaders, and custom props for a cinematic experience. I animated win/lose panels, intro sequences, card shuffles, and shop shines using Dotween and Spine, delivering fluid and engaging visuals. My feature implementations included shop enhancements, scene transitions, end game panels, post-game chatroom, boosting player interaction and retention. I tackled tasks like level-ups, endgame sequences, and chip transitions, ensuring each moment felt rewarding. Loading screens and splash animations were optimized for mobile, maintaining immersion during transitions. Collaborating with the team, I refined workflows with Agile methodology, making development cycles efficient and effective.</p>
+                    <li>Studio: Incytel Games</li>
+                    <li>Platforms: Android/IOS</li>
+                    <li>Team Size: 5 (for this project)</li>
+                    <li>Time Estimation: ~1 years </li>
+                    <li>Engine and Tools: Unity, C#, Spine, Dotween, Shader Graphs</li>
+
                     <div class="project-tags">
                         <span class="tag">Unity</span>
                         <span class="tag">C#</span>
@@ -815,50 +963,139 @@
                         <span class="tag">RPG</span>
                     </div>
                     <div class="project-links">
-                        <a href="#"><i class="fab fa-google-play"></i> Play Store</a>
-                        <a href="#"><i class="fab fa-apple"></i> App Store</a>
+                        <a href="https://play.google.com/store/apps/details?gl=US&hl=en&id=com.incytel.hakemsho"><i class="fab fa-google-play"></i> Play Store</a>
+                        <a href="https://t.ly/yzHLC"><i class="fab fa-apple"></i> App Store</a>
                     </div>
                 </div>
             </div>
             <div class="project-card">
                 <div class="project-image">
-                    <img src="https://images.unsplash.com/photo-1511512578047-dbe267532839?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Kalamatic Game">
+                    <img class="gallery-img1" src="images/Gif/mafia.gif" alt="symbol image">
                 </div>
                 <div class="project-info">
-                    <h3>Kalamatic</h3>
-                    <p>As Lead Game Engineer, I coded the entire game from scratch, implementing UI, gameplay mechanics, server backends, and handled marketing collaborations.</p>
+                    <h3>Mafia Dar Shahr</h3>
+                    <p>What I did: As a Gameplay Engineer, I developed core mechanics for Mafia Dar Shar, a social game with over 500,000 players, using Unity and WebSocket for real-time multiplayer. I optimized network communication and synchronization to ensure seamless interactions across devices. I leveraged blue-green deployment to facilitate smooth updates, minimizing player downtime. Using Unity’s Asset Bundles and UnityWebRequest, I streamlined asset delivery for efficiency. My contributions enhanced gameplay and supported the game’s commercial success. This project honed my skills in large-scale deployment and network programming.</p>
+                    <li>Studio: Amytis Entertainment</li>
+                    <li>Platforms: Android/IOS</li>
+                    <li>Team Size: 8+ </li>
+                    <li>Time Estimation: ~3 years </li>
+                    <li>Engine and Tools: Unity, C#</li>
+
                     <div class="project-tags">
                         <span class="tag">Unity</span>
-                        <span class="tag">Backend</span>
-                        <span class="tag">UI/UX</span>
-                        <span class="tag">Multiplayer</span>
+                        <span class="tag">C#</span>
+                        <span class="tag">Mafia</span>
+                        <span class="tag">Online</span>
                     </div>
                     <div class="project-links">
-                        <a href="#"><i class="fab fa-youtube"></i> Trailer</a>
-                        <a href="#"><i class="fas fa-link"></i> Website</a>
+                        <a href="https://cafebazaar.ir/app/com.amytis.mafiaincity?l=en"><i class="fa-solid fa-download"></i> Bazaar</a>
                     </div>
                 </div>
             </div>
             <div class="project-card">
                 <div class="project-image">
-                    <img src="https://images.unsplash.com/photo-1545566238-01a36ec5aa7d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Hyper Casual Games">
+                    <img class="gallery-img" src="images/Gif/Hideout.gif" alt="symbol image">
                 </div>
                 <div class="project-info">
-                    <h3>Hyper Casual Projects</h3>
-                    <p>Rapid development projects where game ideas are turned into playable products, often in collaboration with known publishers.</p>
+                    <h3>Hideout Survival</h3>
+                    <p>This is a very old game that created using Game Maker Studio 1.4 around 6 years ago. I was learning about spine integration, I created my own custom ragdoll component and shooting mechanics. This was a short project in collaboration with a small art animation studio called Vulture Head. I also created twin stick movement mechanics for this game</p>
+                    <li>Platforms: Android, PC</li>
+                    <li>Team Size: 4</li>
+                    <li>Time Estimation: ~6 months </li>
+                    <li>Engine and Tools: Game Maker Studio, Spine</li>
+
                     <div class="project-tags">
-                        <span class="tag">Hyper Casual</span>
-                        <span class="tag">Rapid Prototyping</span>
-                        <span class="tag">Mobile</span>
-                        <span class="tag">Publishing</span>
+                        <span class="tag">GameMakerStudio</span>
+                        <span class="tag">GML</span>
+                        <span class="tag">Spine</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img class="gallery-img" src="images/Gif/Hitrun.gif" alt="symbol image">|
+                </div>
+                <div class="project-info">
+                    <h3>Run&Gun Clone Prototype</h3>
+                    <p>What I did: For a game jam, I built a vertical slice of Run & Gun, a hyper-casual game, using Unity under tight deadlines. I implemented fluid movement and shooting mechanics for instant playability. I designed and animated the core loop to keep players engaged. Taking on programming and asset creation, I collaborated with a small team. The polished prototype earned positive feedback from players and judges. This project demonstrated my ability to deliver under pressure.</p>
+                    <li>Studio: Personal Project</li>
+                    <li>Platforms: PC</li>
+                    <li>Team Size: 1</li>
+                    <li>Time Estimation: 1 month </li>
+                    <li>Engine and Tools: Unity, Blender</li>
+
+                    <div class="project-tags">
+                        <span class="tag">Unity</span>
+                        <span class="tag">C#</span>
+                        <span class="tag">Prototype</span>
+                        <span class="tag">Casual</span>
                     </div>
                     <div class="project-links">
-                        <a href="#"><i class="fas fa-gamepad"></i> Play Demo</a>
-                        <a href="#"><i class="fas fa-code"></i> GitHub</a>
+                        <a href="https://github.com/voldorel/Run-n-Gun-Challenge"><i class="fa-brands fa-github"></i> Source </a>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+</section>
+
+<section id="gallery" class="section">
+    <div class="container">
+        <div class="section-title">
+            <h2>My Artworks</h2>
+            <p>Art has been a part of my life for over a decade. I've been sketching and creating portraits with a deep passion. I've also explored digital art and animation. In addition, I've had the privilege of showcasing my work in two art exhibitions, allowing me to share my creativity with a broader audience. This love for art, whether on paper or in pixels, continues to inspire me as I aim to create visually captivating experiences in game development.</p>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <a href="images/Art/3d/119.png" target="_blank">
+                    <img class="gallery-img" src="images/Art/3d/119.png" alt="symbol image">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="images/Art/3d/112.jpg" target="_blank">
+                    <img class="gallery-img" src="images/Art/3d/112.jpg" alt="symbol image">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="images/Art/3d/114.jpg" target="_blank">
+                    <img class="gallery-img" src="images/Art/3d/114.jpg" alt="symbol image">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="images/Art/3d/124.jpg" target="_blank">
+                    <img class="gallery-img" src="images/Art/3d/124.jpg" alt="symbol image">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="images/Art/2d/111.jpg" target="_blank">
+                    <img class="gallery-img" src="images/Art/2d/111.jpg" alt="symbol image">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="images/Art/2d/141.png" target="_blank">
+                    <img class="gallery-img" src="images/Art/2d/141.png" alt="symbol image">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="images/Art/2d/114.jpg" target="_blank">
+                    <img class="gallery-img" src="images/Art/2d/114.jpg" alt="symbol image">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="images/Art/2d/142.png" target="_blank">
+                    <img class="gallery-img" src="images/Art/2d/142.png" alt="symbol image">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="images/Art/2d/143.png" target="_blank">
+                    <img class="gallery-img" src="images/Art/2d/143.png" alt="symbol image">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="images/Art/2d/144.png" target="_blank">
+                    <img class="gallery-img" src="images/Art/2d/144.png" alt="symbol image">
+                </a>
+            </div>
     </div>
 </section>
 
@@ -872,42 +1109,42 @@
         <div class="timeline">
             <div class="timeline-item left">
                 <div class="timeline-content">
-                    <span class="timeline-date">Oct 2022 - Jan 2023</span>
-                    <h3>Technical Lead</h3>
-                    <h4>Ubaste Games, Turkey</h4>
-                    <p>Led hyper-casual game development projects, collaborating with marketing and development teams to create successful mobile games. Implemented efficient development pipelines and mentored junior developers.</p>
+                    <span class="timeline-date">Jan 2023 - present</span>
+                    <h3>Game Startup Co-Founder</h3>
+                    <h4>Incytel Games, Tehran</h4>
+                    <p>I launched Match Tori, a PvP match-3 game December 2024 . I designed and built the game from the ground up with turn-based multiplayer functionality, while collaborating with a teammate to refine features and optimize performance for mobile.</p>
                 </div>
             </div>
             <div class="timeline-item right">
                 <div class="timeline-content">
-                    <span class="timeline-date">Dec 2021 - Oct 2022</span>
-                    <h3>Senior Unity Developer</h3>
-                    <h4>Freelance, Worldwide</h4>
-                    <p>Successfully published mobile game "Gem Wizard Tactics" and worked on multiple client projects. Provided technical consulting and full-cycle game development services.</p>
+                    <span class="timeline-date">October 2024 – present</span>
+                    <h3>Technical Artist</h3>
+                    <h4>Incytel Games, Tehran</h4>
+                    <p>I worked on shaders, animations, game mechanics, VFX and SFX, asset integration, easing tech art communication in one of Iran's most successful game companies. </p>
                 </div>
             </div>
             <div class="timeline-item left">
                 <div class="timeline-content">
-                    <span class="timeline-date">Sep 2021 - Dec 2021</span>
-                    <h3>Senior Unity Developer & Scrum Master</h3>
-                    <h4>Aban kianseh, Tehran</h4>
-                    <p>Implemented agile methodologies while leading technical development of game projects. Bridged communication between stakeholders and development teams.</p>
+                    <span class="timeline-date">Feb 2024 – October 2024</span>
+                    <h3>Game Engineer</h3>
+                    <h4>Incytel Games, Tehran</h4>
+                    <p>When I first joined this company, I implemented game mechanics and integrated online services for mobile games using Unity, creating engaging multiplayer experiences for Android and iOS users.</p>
                 </div>
             </div>
             <div class="timeline-item right">
                 <div class="timeline-content">
-                    <span class="timeline-date">Apr 2021 - Sep 2021</span>
-                    <h3>Senior Unity Developer</h3>
-                    <h4>Paeezan Studio, Tehran</h4>
-                    <p>Developed core game systems and optimized performance for mobile platforms. Contributed to architectural decisions and technical planning.</p>
+                    <span class="timeline-date">Feb 2021 – Dec 2023 </span>
+                    <h3>Junior Unity Developer</h3>
+                    <h4>Amytis Entertainment, Tehran</h4>
+                    <p>Spearheaded development for the Mafia Dar Shar's client. Later led a small team of 2 developers and organized project tasks</p>
                 </div>
             </div>
             <div class="timeline-item left">
                 <div class="timeline-content">
-                    <span class="timeline-date">Jun 2015 - Feb 2021</span>
-                    <h3>Co-Founder & Lead Game Engineer</h3>
-                    <h4>Joyixir Studio, Qazvin</h4>
-                    <p>Launched award-winning games and mentored junior developers. Oversaw all technical aspects of game development from concept to release.</p>
+                    <span class="timeline-date">Oct 2015 – Feb 2019</span>
+                    <h3>Computer Engineering Associate</h3>
+                    <h4>University of Tehran, Iran</h4>
+                    <p>Graduated, Associate of Arts, Computer Engineering and did some side freelancing projects as a programmer</p>
                 </div>
             </div>
         </div>
@@ -918,30 +1155,42 @@
 <section id="contact" class="section contact">
     <div class="container">
         <div class="section-title">
-            <h2>Hire Me</h2>
-            <p>Interested in working together? Let's discuss your project!</p>
+            <h2 class="major">Contact</h2>
+            <p>Iran - Tehran - Tajrish - Qeytarieh</p>
+            <p>voldorel@gmail.com</p>
+            <p>Telegram: @m3hdi1997</p>
+            <p>
+                <a href="https://www.linkedin.com/in/mehdi-parvan-295332196">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </p>
+            <p>
+                <a href="https://github.com/voldorel"><i class="fab fa-github">
+                </i>
+                </a>
+            </p>
         </div>
-        <div class="contact-form">
-            <form>
-                <div class="form-group">
-                    <label for="name">Your Name</label>
-                    <input type="text" id="name" class="form-control" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" class="form-control" required>
-                </div>
-                <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" class="form-control" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Your Message</label>
-                    <textarea id="message" class="form-control" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
-        </div>
+<!--        <div class="contact-form">-->
+<!--&lt;!&ndash;            <form>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="form-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <label for="name">Your Name</label>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <input type="text" id="name" class="form-control" required>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="form-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <label for="email">Email Address</label>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <input type="email" id="email" class="form-control" required>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="form-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <label for="subject">Subject</label>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <input type="text" id="subject" class="form-control" required>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="form-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <label for="message">Your Message</label>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <textarea id="message" class="form-control" required></textarea>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <button type="submit" class="btn btn-primary">Send Message</button>&ndash;&gt;-->
+<!--&lt;!&ndash;            </form>&ndash;&gt;-->
+<!--        </div>-->
     </div>
 </section>
 
@@ -951,32 +1200,31 @@
         <div class="footer-content">
             <div class="footer-column">
                 <h3>Mehdi Parvan</h3>
-                <p>Senior Game & Unity Developer creating immersive gaming experiences with cutting-edge technology.</p>
+                <p>Game Developer & Technical Artist creating immersive gaming experiences with cutting-edge technology.</p>
                 <div class="social-links">
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-telegram-plane"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/in/mehdi-parvan-295332196/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://t.me/m3hdi1997"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="https://github.com/voldorel/"><i class="fab fa-github"></i></a>
                 </div>
             </div>
             <div class="footer-column">
                 <h3>Quick Links</h3>
                 <ul class="footer-links">
-                    <li><a href="#skills">My Skills</a></li>
+                    <li><a href="#skills">About</a></li>
                     <li><a href="#projects">Games</a></li>
                     <li><a href="#experience">Experience</a></li>
-                    <li><a href="#contact">Hire Me</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
-            <div class="footer-column">
-                <h3>Game Platforms</h3>
-                <ul class="footer-links">
-                    <li><a href="#"><i class="fab fa-google-play"></i> Google Play</a></li>
-                    <li><a href="#"><i class="fab fa-apple"></i> App Store</a></li>
-                    <li><a href="#"><i class="fab fa-steam"></i> Steam</a></li>
-                    <li><a href="#"><i class="fab fa-itch-io"></i> Itch.io</a></li>
-                </ul>
-            </div>
+<!--            <div class="footer-column">-->
+<!--                <h3>Game Platforms</h3>-->
+<!--                <ul class="footer-links">-->
+<!--                    <li><a href="#"><i class="fab fa-google-play"></i> Google Play</a></li>-->
+<!--                    <li><a href="#"><i class="fab fa-apple"></i> App Store</a></li>-->
+<!--                    <li><a href="#"><i class="fab fa-steam"></i> Steam</a></li>-->
+<!--                    <li><a href="#"><i class="fab fa-itch-io"></i> Itch.io</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
         </div>
         <div class="footer-bottom">
             <p>&copy; 2025 Mehdi Parvan. All rights reserved.</p>
@@ -1026,6 +1274,17 @@
                     top: targetElement.offsetTop - 80,
                     behavior: 'smooth'
                 });
+            }
+        });
+    });
+
+    document.querySelectorAll('.project-card').forEach(card => {
+        card.addEventListener('click', function(e) {
+            if (e.target.tagName !== 'A') { // Ignore clicks on existing links
+                const url = this.getAttribute('data-url');
+                if (url) {
+                    window.location.href = url;
+                }
             }
         });
     });
